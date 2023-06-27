@@ -4,30 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Data Posts - SantriKoding.com</title>
+    <title>UAS Pemrogramman </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+</style>
 <body style="background: lightgray">
 
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
                 <div>
-                    <h3 class="text-center my-4">Tutorial Laravel 10 untuk Pemula</h3>
-                    <h5 class="text-center"><a href="https://santrikoding.com">www.santrikoding.com</a></h5>         
+                    <h3 class="text-center my-4">Bulan Store</h3>
+                    <h5 class="text-center"><a href="Toko Baju Bulan">www.BulanStore.com</a></h5>         
                     <hr>
                 </div>
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
-                        <a href="{{ route('posts.create') }}" class="btn btn-md btn-success mb-3">TAMBAH POST</a>
+                        <a href="{{ route('posts.create') }}" class="btn btn-md btn-success mb-3">tambah data</a>
                         <table class="table table-bordered">
                             <thead>
                               <tr>
-                                <th scope="col">GAMBAR</th>
-                                <th scope="col">JUDUL</th>
-                                <th scope="col">CONTENT</th>
+                                <th scope="col">Nama Barang</th>
+                                <th scope="col">Kode Barang</th>
+                                <th scope="col">Stock Barang</th>
                                 <th scope="col">AKSI</th>
+                              </tr>
+                            </thead>
+
+                            <thead>
+                              <tr>
+                                <th scope="col">Celana Pendek</th>
+                                <th scope="col">001</th>
+                                <th scope="col">9</th>
+                                <th><button class="button button1">hapus barang</button>
+                                <button class="button button2">kurangi stock</button></th>
                               </tr>
                             </thead>
                             <tbody>
